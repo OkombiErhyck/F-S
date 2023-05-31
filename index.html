@@ -1,378 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F&S Brickwork Contractors</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/leaflet/leaflet.css" />
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://kit.fontawesome.com/3fb0bac4eb.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-
-    <div id="mobile-menu">
-        <a id="close-btn" href="#"><img src="img/close-btn.png" alt="close"></a>
-        <div class="container">
-            <div class="row vh-100 align-items-center">
-                <div class="col-12 text-center">
-                    <nav>
-                        <div>
-                            <a class="text-decoration-none text-uppercase h3" href="#intro-section">about</a>
-                        </div>
-                        <div class="my-3">
-                            <a class="text-decoration-none text-uppercase h3" href="#menu-section">products</a>
-                        </div>
-                        <div class="mb-3">
-                            <a class="text-decoration-none text-uppercase h3" href="#contact-info-section">contact</a>
-                        </div>
-                        <div>
-                            <a class="text-decoration-none text-uppercase h3" href="#map-section">how to find
-                                    us?</a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <header class="p-3" id="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-4">
-                   
-                </div>
-                <div class="d-none d-md-block col-8 text-right">
-                    <a class="text-decoration-none text-uppercase" href="#">about</a>
-                    <a class="text-decoration-none text-uppercase" href="#">products</a>
-                    <a class="text-decoration-none text-uppercase" href="#">contact</a>
-                    <a class="text-decoration-none text-uppercase" href="#">how to find us?</a>
-                </div>
-                <div class="d-md-none col-8 text-right">
-                    <a id="menu-btn" href="#"><img id="menu-icon" src="img/menu.png" alt="menu"></a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-
-
-    <section id="hero-section" class="text-light">
-        <div class="video-container">
-            <video autoplay loop muted>
-                <source src="./img/pexels-kmeel-stock-6919173-1920x1080-30fps.mp4" type="video/mp4">
-                <!-- Include additional <source> tags for different video formats -->
-            </video>
-            <div class="container-fluid">
-                <div class="row vh-100 align-items-center pb-5">
-                    <div class="col-12 text-center">
-                        <h1 class="display-1 font-weight-bold">F&S BRICKWORK</h1>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a leo id lacus gravida semper at eu lacus.</p>
-                    </div>
-                </div>
-            </div>
-            <a id="arrow-down" href="#intro-section">
-                <span class="fa-stack fa-2x">
-                    <i class="far fa-circle fa-stack-2x"></i>
-                    <i class="fas fa-chevron-down fa-stack-1x"></i>
-                </span>
-            </a>
-        </div>
-    </section>
-    
-
-
-    <section id="intro-section" class="py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-6 offset-3 text-center py-5">
-                    <h1 class="font-weight-bold">OUR VALUES ARE</h1>
-                    <p class="text-muted lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 text-center">
-                    
-                    <p class="h4 font-weight-bold">SPEED</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                   
-                    <p class="h4 font-weight-bold">QUALITY</p>
-                </div>
-                <div class="col-sm-4 text-center">
-                   
-                    <p class="h4 font-weight-bold">TRANSPARENCY</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <section id="about-section">
-        <div class="container-fluid p-0">
-            
-            <div class="row no-gutters align-items-center" id="about-bg-2">
-                <div class="col-6">
-
-                </div>
-                <div class="col-md-6 p-5 text-light">
-                    <h2>The Future</h2>
-                    <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                    <button class="btn btn-primary">FIND OUT MORE</button>
-
-                </div>
-            </div>
-
-            <div class="row no-gutters">
-                <div class="col-12 col-md-5 offset-md-1 p-5 align-self-center">
-                    <h2>About F&S Brickwork</h2>
-                    <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                    <button class="btn btn-primary">FIND OUT MORE</button>
-                </div>
-                <div class="d-none d-md-block col-md-5 offset-md-1" id="about-bg-1">
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-<!--   <section id="menu-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center py-5">
-                    <h1 class="font-weight-bold">SELECTION FROM OUR MENU</h1>
-                    <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 p-5 text-center">
-                    <img class="img-fluid" src="img/coffee-item-1.png" alt="coffe shop logo">
-                    <h2 class="my-3">BLACK CAKE</h2>
-                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                    </p>
-                    <p class="h3">4€</p>
-
-
-                </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
-                    <img class="img-fluid" src="img/coffee-item-2.png" alt="coffe shop logo">
-                    <h2 class="my-3">BLACK COFFEE</h2>
-                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                    </p>
-                    <p class="h3">6€</p>
-                </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
-                    <img class="img-fluid" src="img/coffee-item-3.png" alt="coffe shop logo">
-                    <h2 class="my-3">ESPRESSO</h2>
-                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                    </p>
-                    <p class="h3">6€</p>
-                </div>
-
-
-                <div class="col-sm-6 col-md-4 p-5 text-center">
-                    <img class="img-fluid" src="img/coffee-item-4.png" alt="coffe shop logo">
-                    <h2 class="my-3">LATTE</h2>
-                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                    </p>
-                    <p class="h3">6€</p>
-
-                </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
-                    <img class="img-fluid" src="img/coffee-item-5.png" alt="coffe shop logo">
-                    <h2 class="my-3">MACARONS</h2>
-                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                    </p>
-                    <p class="h3">3€</p>
-                </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
-                    <img class="img-fluid" src="img/coffee-item-6.png" alt="coffe shop logo">
-                    <h2 class="my-3">MACCHIATO</h2>
-                    <p class="lead my-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-                    </p>
-                    <p class="h3">6€</p>
-                </div>
-            </div>
-        </div>
-    </section>-->
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/************************************************HEADER*********************************************/
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header-logo {
+    height: 24px;
+}
+
+header a {
+    margin-left: 32px;
+    color: white;
+}
+
+header a:hover {
+    color: white;
+}
+
+header a:visited {
+    color: white;
+}
+
+
+/****************NEW NEW NEW******************/
+
+.solid-header {
+    position: fixed;
+    background-color: #c69572;
+    transition: background-color 0.5s ease;
+}
+
+
+/************************************************HERO SECTION*********************************************/
+
+#hero-section {
+    background-video: url(../img/pexels-kmeel-stock-6919173-1920x1080-30fps.mp4);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #4133329c;
+    height: 100vh;
+}
 
+#hero-logo {
+    width: 256px;
+}
+
+#arrow-down {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 64px;
+    color: white;
+}
 
+@media (max-width: 768px) {
+    #hero-section h1 {
+        font-size: 3rem;
+    }
+    #hero-logo {
+        width: 196px;
+    }
+}
 
 
-    <section id="contact-info-section">
-        <div class="container-fluid p-0 text-light">
-            <div class="row no-gutters" id="contact-info-bg-1">
-                <div class="col-sm-5 offset-sm-1 p-5">
-                    <h2>WHY F&S BRICKWORKS?</h2>
-                    <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                </div>
-                <div class="col-sm-6 p-5" id="contact-info-bg-2">
-                    <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                    </p>
-                    <button class="btn btn-primary">FIND OUT MORE</button>
+#hero-section .video-container {
+    position: relative;
+    overflow: hidden;
+}
 
-                </div>
-            </div>
-        </div>
-    </section>
+#hero-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+#hero-section .container-fluid {
+    position: relative;
+    z-index: 1;
+}
 
 
+/************************************************INTRO SECTION*********************************************/
 
-    <section id="map-section">
-        <div id="map"></div>
-    </section>
+#intro-section {
+    background: #eae7de;
+}
 
 
+/************************************************ABOUT SECTION*********************************************/
 
+#about-section {}
 
-    <footer>
-        <div class="container-fluid py-3 text-light">
-            <div class="row">
-                <div class="col-md-5 offset-sm-1 text-left align-self-center">
-                   F&S BRICKWORK | © 2023 All rights reserved
-                </div>
-                <div class="col-md-5 text-right">
-                    <a href="#"><img src="img/facebook-icon.png" alt="facebook icon"></a>
-                    <a href="#" class="mx-3"><img src="img/instagram-icon.png" alt="instagram icon"></a>
-                    <a href="#" class="mr-3"><img src="img/twitter-icon.png" alt="twitter icon"></a>
-                    <a href="#"><img src="img/phone-icon.png" alt="phone icon"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+#about-bg-1 {
+    background-image: url(../img/pexels-ksenia-chernaya-5691622.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-height: 480px;
+}
 
+#about-bg-2 {
+    background-image: url(../img/pexels-ksenia-chernaya-5691606.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 640px;
+    min-height: 640px;
+}
 
-    <script src="js/jquery-3.4.1.slim.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
 
-    <script src="js/leaflet.js"></script>
+/************************************************MENU SECTION*********************************************/
 
-    <script>
-        window.addEventListener("load", function() {
+#menu-section {
+    background: #eae7de;
+}
 
 
-            let menuBtn = document.getElementById("menu-btn");
-            let mobileMenu = document.getElementById("mobile-menu");
-            let closeBtn = document.getElementById("close-btn");
+/************************************************CONTACT SECTION*********************************************/
 
-            menuBtn.addEventListener("click", function() {
+#contact-info-bg-1 {
+    background: linear-gradient(to right, #36313782, #36313782), url(../img/pexels-pixabay-276514.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
 
-                if (mobileMenu.style.display = "none") {
-                    mobileMenu.style.display = "block";
-                }
+#contact-info-bg-2 {
+    background-color: #ffffffa8;
+}
 
-            });
 
-            closeBtn.addEventListener("click", function() {
-                if (mobileMenu.style.display = "block") {
-                    mobileMenu.style.display = "none";
-                }
-            });
+/************************************************MAP SECTION*********************************************/
 
 
+/*#map-section {
+    background-image : url(../img/map-demo.png);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    height           : 460px;
+}*/
 
-            ///jQuery alternativa za otvaranje zatvaranje menija
+#map {
+    height: 480px;
+}
 
-            /*$("#menu-btn, #close-btn").click(function(){
-                $("#mobile-menu").toggle();
-            });*/
 
+/************************************************FOOTER SECTION*********************************************/
 
+footer {
+    background: #312423;
+}
 
-            ////za menu
 
-            let heroSection = document.getElementById("hero-section");
-            let heroSectionHeight = heroSection.clientHeight;
+/************************************************MOBILE MENU*********************************************/
+#menu-icon {
 
-            let header = document.getElementById("header");
+width: 40px;
+height: auto;
+}
 
 
-            document.addEventListener("scroll", function() {
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #312423ed;
+    z-index: 2;
+    display: none;
+}
 
-                if (document.documentElement.scrollTop > heroSectionHeight) {
+#mobile-menu a {
+    color: white;
+}
 
-                    if (!header.classList.contains("solid-header")) {
-                        header.classList.add("solid-header");
-                    }
+#mobile-menu a:hover {
+    color: rgb(175, 171, 171);
+}
 
-                } else {
+#mobile-menu #close-btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
 
-                    if (header.classList.contains("solid-header")) {
-                        header.classList.remove("solid-header");
-                    }
-                }
-            });
+@media (max-width: 576px) {}
 
+@media (max-width: 768px) {}
 
+@media (max-width: 992px) {}
 
-            ///jQuery alternativa za menu
+@media (max-width: 1200px) {}
 
-            /*$(document).scroll(function () {
 
-                let header = $("#header");
+.fade-in {
+    opacity: 0;
+    transition: opacity 2.5s ease-in;
+}
 
-                if ($(this).scrollTop() > $("#hero-section").height()) {
-
-                    if(!header.hasClass("solid-header")) {
-                        $("#header").addClass("solid-header");
-                    }
-                } else {
-                    if (header.hasClass("solid-header")) {
-                        $("#header").removeClass("solid-header");
-                    }
-                }
-
-            });*/
-
-
-
-            /////za mape
-
-            var myMap = L.map('map', {
-                center: [40.741770, -73.983090],
-                zoom: 17
-            });
-
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(myMap);
-
-
-            var myIcon = L.icon({
-                iconUrl: 'img/map-icon.png'
-            });
-
-            var marker = L.marker([40.741770, -73.983090], {
-                icon: myIcon
-            }).addTo(myMap);
-
-
-            marker.bindPopup("We are here!");
-
-
-
-
-        });
-    </script>
-
-</body>
-
-</html>
+.fade-in.visible {
+    opacity: 1;
+}
