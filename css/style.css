@@ -215,3 +215,13 @@ height: auto;
 @media (max-width: 992px) {}
 
 @media (max-width: 1200px) {}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2.5s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
