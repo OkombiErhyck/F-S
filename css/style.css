@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -34,10 +34,21 @@ header a:visited {
 
 .solid-header {
     position: fixed;
-    background-color: #c69572;
+    background-color: #c695728b  ;
     transition: background-color 0.5s ease;
+     
 }
-
+.solid-header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    filter: blur(8px); /* Add the blur effect to the background color */
+    z-index: -1;
+  }
 
 /************************************************HERO SECTION*********************************************/
 
@@ -224,4 +235,108 @@ height: auto;
 
 .fade-in.visible {
     opacity: 1;
+}
+
+
+
+
+
+
+/*/////////////////logo///////////*/
+
+
+ 
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --brick-color: #bd5858;
+  --brick-width: 4%;
+  --brick-height: 5px;
+  --brick-space: 1px;
+  --brick-side-space: 4px;
+ 
+}
+
+.brick {
+  background: var(--brick-color);
+  width: var(--brick-width);
+  height: var(--brick-height);
+  border-radius: var(--brick-border-radius);
+  margin: var(--brick-space);
+  box-shadow: 0 0 19px 1px darken(var(--brick-color), 20%) inset;
+  position: relative;
+  z-index: 1; /* Adjust the z-index value as needed */
+}
+
+#br{
+  display: flex;
+  background: #cccccc00;
+   margin-top:0px
+}
+
+#br:first-child .brick {
+  margin-top: var(--brick-side-space);
+}
+
+#br:last-child .brick {
+  margin-bottom: var(--brick-side-space);
+}
+
+#br:nth-child(even) {
+  .brick:first-child {
+    display: none;
+  }
+  
+  .brick:last-child {
+    margin-right: var(--brick-space);
+  }
+  
+  &::before,
+  &::after {
+    position: relative;
+    content: "";
+    width: calc(var(--brick-width) / 2);
+    height: var(--brick-height);
+    background: var(--brick-color);
+    border-radius: var(--brick-border-radius);
+    margin: var(--brick-space);
+    box-shadow: 0 0 19px 1px darken(var(--brick-color), 20%) inset;
+  }
+  
+  &::before {
+    margin-left: var(--brick-side-space);
+  }
+  
+  &::after {
+    margin-right: var(--brick-side-space);
+  }
+}
+
+.brick:last-child {
+  margin-right: var(--brick-side-space);
+}
+
+.brick:first-child {
+  margin-left: var(--brick-side-space);
+}
+
+
+#ma{
+   
+    width: 360px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+#tpo{
+
+     margin-top: -11px ;
 }
