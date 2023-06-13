@@ -1,5 +1,6 @@
  body {
     font-family: 'Oswald', sans-serif;
+    z-index: 2;
 }
 
 
@@ -9,7 +10,7 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 4;
 }
 
 #header-logo {
@@ -44,10 +45,11 @@ header a:visited {
     top: 0;
     left: 0;
     right: 0;
+    z-index: -1;
     bottom: 0;
     background-color: inherit;
     filter: blur(8px); /* Add the blur effect to the background color */
-    z-index: -1;
+   
   }
 
 /************************************************HERO SECTION*********************************************/
@@ -125,21 +127,63 @@ header a:visited {
 
 #about-section {}
 
+
+
 #about-bg-1 {
+     
+    border-left: solid 2px green;
     background-image: url(../img/pexels-ksenia-chernaya-5691622.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
-    min-height: 480px;
+    background-position: left;
+    height: 399px;
+    min-height: 358px;
+    margin-left: 0px;
+    background-clip: content-box;
+    padding: 10px; /* Adjust the value to add desired space */
 }
 
 #about-bg-2 {
-    background-image: url(../img/pexels-ksenia-chernaya-5691606.jpg);
+    border-right: solid 2px green;
+     
+    background-image: url(../img/br.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    height: 640px;
-    min-height: 640px;
+    height: 399px;
+    min-height: 358px;
+    background-clip: content-box;
+    padding: 10px; /* Adjust the value to add desired space */
+}
+
+#bg1-text{
+
+z-index: 1;
+
+}
+
+#bg2-text{
+
+    z-index: 1;
+    
+    }
+
+@media (max-width: 768px) {
+    #bg1-text {
+        margin-bottom:-410px
+    }
+
+    #bg2-text {
+        margin-top:-410px
+    }
+    
+
+    #about-bg-1{
+        border-left: solid 2px rgba(0, 128, 0, 0);
+    }
+    #about-bg-2{
+        border-right: solid 2px rgba(0, 128, 0, 0);
+    }
 }
 
 
