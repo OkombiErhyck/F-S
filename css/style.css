@@ -173,12 +173,15 @@ header a:visited {
     .footer-column {
         flex-basis: 50%;
     }
+    
 }
 
 @media (max-width: 480px) {
     .footer-column {
         flex-basis: 100%;
     }
+     
+
 }
 
 
@@ -191,7 +194,9 @@ header a:visited {
     background-position: left;
     height: 399px;
     min-height: 358px;
-    margin-left: 0px;
+ margin-left: 0px;
+
+ 
     background-clip: content-box;
     padding: 10px; /* Adjust the value to add desired space */
 }
